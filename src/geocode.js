@@ -4,7 +4,7 @@ export const geocodeByPlaceID = (placeId) => {
   // before the component is mounted (i.e. in 'componentWillMount()') we won't be safe to render
   // on the server (SSR) as the 'window' object isn't available.
   const geocoder = new window.google.maps.Geocoder()
-  console.log("loading from valdezm")
+  console.log("loading from valdezm, again")
 
   return new Promise((resolve, reject) => {
     geocoder.geocode({ placeId }, (results, status) => {
